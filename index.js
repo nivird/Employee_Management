@@ -41,7 +41,7 @@ async function mainMenu() {
 }
 
 async function viewDepartments() {
-  const res = await pool.query('SELECT * FROM department');
+  const res = await pool.query('SELECT * FROM departments');
   console.table(res.rows);
   mainMenu();
 }
